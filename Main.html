@@ -6,10 +6,119 @@
     <title>Biker Zone</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .font_poppins{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
 </head>
 <body>
     <header>
+        <div class="navbar bg-base-100 mt-2">
+            <div class="navbar-start">
+                <!--Small Display-->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <p class="font_poppins text-4xl font-bold lg:ml-36 ">Bike Zone</p>
+            </div>
+            <!--Large Display-->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font_poppins text-lg font-medium">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end lg:mr-36">
+              <button class="btn font_poppins text-xl font-medium bg-[#E76F51] text-white">Login</button>
+            </div>
+        </div>
 
+        <!--Image Slider-->
+        <div class="border border-x-2 mx-36 my-12 bg-[#E76F511A] rounded-md">
+
+            <div class="carousel w-full">
+                <!--Slider1-->
+                <div id="slide1" class="carousel-item relative w-full"> 
+                <div class="hero bg-base-200">
+                        <div class="hero-content flex-col lg:flex-row-reverse gap-5        lg:mx-24">
+                            <div class="border-2 border-dashed border-gray-300 p-2.5">
+                                <img src="images/slider/bike1.png">
+                            </div>
+                          <div class="w-3/5">
+                            <h1 class="text-5xl font-bold">Ride-on R15 V4 with Smile</h1>
+                            <p class="py-6 text-sm font-normal">
+                                Amet minim mollit non deserunt ullamco 
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            </p>
+                            <button class="btn font_poppins text-xl font-medium bg-[#E76F51] text-white">Purchase</button>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="text-[#E76F51] text-3xl">❮</a>
+                        <a href="#slide2" class="text-[#E76F51] text-3xl">❯</a>
+                    </div>
+
+                </div>
+                <!--Slider2-->
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="images/slider/bike2.png"/>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="text-[#E76F51] text-3xl">❮</a>
+                    <a href="#slide3" class="text-[#E76F51] text-3xl">❯</a>
+                  </div>
+                </div>
+                <!--Slider3-->
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="images/slider/bike3.png"/>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="text-[#E76F51] text-3xl">❮</a>
+                    <a href="#slide4" class="text-[#E76F51] text-3xl">❯</a>
+                  </div>
+                </div>
+                <!--Slider4-->
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="images/slider/bike4.png"/>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="text-[#E76F51] text-3xl">❮</a>
+                    <a href="#slide1" class="text-[#E76F51] text-3xl">❯</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Image Slider End-->
     </header>
 
     <body>
