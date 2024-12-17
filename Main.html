@@ -18,11 +18,25 @@
         }
     </style>
 
+    <!--Custom Tailwind color-->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                bt_primary_color:'#E76F51',
+              }
+            }
+          }
+        }
+      </script>
+
 </head>
 <body>
-    <header>
-        <div class="navbar bg-base-100 mt-2">
-            <div class="navbar-start">
+    <header class="container mx-auto lg:px-20">
+        <div class="navbar bg-base-100 mt-2 ">
+            <div class="flex-1">
                 <!--Small Display-->
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -46,10 +60,10 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <p class="font_poppins text-4xl font-bold lg:ml-36 ">Bike Zone</p>
+                <p class="font_poppins text-4xl font-bold">Bike Zone</p>
             </div>
             <!--Large Display-->
-            <div class="navbar-center hidden lg:flex">
+            <div class="hidden lg:flex">
               <ul class="menu menu-horizontal px-1 font_poppins text-lg font-medium">
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
@@ -57,12 +71,12 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <div class="navbar-end lg:mr-36">
-              <button class="btn font_poppins text-xl font-medium bg-[#E76F51] text-white">Login</button>
+            <div class="navbar-end w-auto">
+                <button class="btn font_poppins text-lg font-medium bg-bt_primary_color text-white px-8 py-2">Login</button>
             </div>
         </div>
         <!--Image Slider-->
-        <div class="border border-x-2 mx-36 my-12 bg-[#E76F511A] rounded-md">
+        <div class="border border-x-2 my-12 bg-[#E76F511A] rounded-md">
 
             <div class="carousel w-full">
 
@@ -168,9 +182,9 @@
         <!--Image Slider End-->
     </header>
 
-    <body>
-
-    </body>
+    <main class="container mx-auto lg:px-20">
+        
+    </main>
 
     <footer></footer>
 </body>
